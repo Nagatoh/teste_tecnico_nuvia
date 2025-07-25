@@ -1,0 +1,18 @@
+[project]
+name = "clora"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "ipykernel>=6.30.0",
+    "matplotlib>=3.10.3",
+    "nltk>=3.9.1",
+    "pandas>=2.3.1",
+    "requests>=2.32.4",
+    "scikit-learn>=1.7.1",
+    "spacy>=3.8.7",
+    "streamlit>=1.47.1",
+    "wikipedia-api>=0.8.1",
+    "wordcloud>=1.9.4",
+]
