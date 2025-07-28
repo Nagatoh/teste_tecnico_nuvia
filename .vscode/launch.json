@@ -1,0 +1,16 @@
+{
+    "configurations": [
+        {
+            "type": "debugpy",
+            "request": "launch",
+            "name": "Debug Streamlit App",
+            "module": "streamlit",
+            "python": "${workspaceFolder}/.venv/Scripts/python.exe",
+            "args": [
+                "run",
+                "src/nuvia/interface/streamlit_app.py"
+            ],
+            "justMyCode": true
+        }
+    ]
+}
