@@ -1,0 +1,17 @@
+# docker-compose.yml
+services:
+  # Nome do nosso serviço/aplicação
+  bias-analyzer-app:
+    # Diz ao Compose para construir a imagem usando o Dockerfile no diretório atual ('.')
+    build: .
+    # Mapeia a porta 8501 do contêiner para a porta 8501 da sua máquina local.
+    # Formato: <porta-local>:<porta-do-conteiner>
+    ports:
+      - "8501:8501"
+    # (Opcional, mas recomendado para desenvolvimento)
+    # Monta o diretório atual no diretório /app do contêiner.
+    # Qualquer mudança que você fizer no código local será refletida instantaneamente
+    # dentro do contêiner, sem precisar reconstruir a imagem.
+    volumes:
+      - ./nuvia:/app/src/nuvia
+      - ./interface:/app/src/nuvia/interface

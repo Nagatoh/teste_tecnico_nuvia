@@ -7,6 +7,7 @@ class Article:
         self.title = title
         self.content = content
         self.bias_segments: List[BiasSegment] = []
+        self.total_score = 0.0
 
     def add_bias_segment(self, segment: BiasSegment):
         self.bias_segments.append(segment)

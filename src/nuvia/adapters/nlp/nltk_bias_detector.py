@@ -7,15 +7,15 @@ import string
 from typing import List
 from nuvia.application.services.bias_detection_service import BiasDetectionService
 from nuvia.domain.value_objects.bias_segment import BiasSegment
-# nltk.download("punkt")
-# nltk.download("opinion_lexicon")
-# nltk.download("stopwords")
-# nltk.download("wordnet")
+nltk.download("punkt")
+nltk.download("opinion_lexicon")
+nltk.download("stopwords")
+nltk.download("wordnet")
 
-# stop_words = set(stopwords.words("english"))
-# positive_words = set(opinion_lexicon.positive())
-# negative_words = set(opinion_lexicon.negative())
-# lemmatizer = WordNetLemmatizer()
+stop_words = set(stopwords.words("english"))
+positive_words = set(opinion_lexicon.positive())
+negative_words = set(opinion_lexicon.negative())
+lemmatizer = WordNetLemmatizer()
 
 class NltkBiasDetector(BiasDetectionService):
     def __init__(self,threshold=0.15):

@@ -9,17 +9,19 @@ dependencies = [
     "matplotlib>=3.10.3",
     "nltk>=3.9.1",
     "pandas>=2.3.1",
+    "pipreqs>=0.5.0",
     "requests>=2.32.4",
     "scikit-learn>=1.7.1",
     "sentence-transformers>=5.0.0",
     "spacy>=3.8.7",
     "streamlit>=1.47.1",
+    "weasyprint>=66.0",
     "wikipedia-api>=0.8.1",
     "wordcloud>=1.9.4",
 ]
 
 [project.scripts]
-nuvia = "nuvia.interface.streamlit:main"
+nuvia = "nuvia.interface.streamlit_app:main"
 [tool.setuptools]
 package-dir = {"" = "src"}              # tudo que está em src/ vira importável
 packages = {find = {where = ["src"]}}   # procure pacotes dentro de src/

@@ -7,13 +7,14 @@ from nuvia.application.services.bias_detection_service import BiasDetectionServi
 from nuvia.domain.value_objects.bias_segment import BiasSegment
 
 
+
 class HybridBiasDetector(BiasDetectionService):
     """
     Uma classe para detectar viés em texto usando uma abordagem híbrida:
     1. Um modelo de ML (BERT) para classificação de subjetividade.
     2. Léxicos para identificar "Peacock" e "Weasel words".
     """
-    def __init__(self,threshold=0.6):
+    def __init__(self,threshold=0.4):
         """
         Inicializa o detector, carregando o modelo de ML e os léxicos.
         
